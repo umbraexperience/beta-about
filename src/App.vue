@@ -81,11 +81,13 @@ export default {
   transform: scale(1.2);
   margin-top: -9.5rem;
   margin-right: -1rem;
+  
 }
 
 .agile__actions {
   justify-content: flex-end !important;
   margin-right: -2rem;
+  
 }
 
 .agile__dots button {
@@ -183,6 +185,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-y: hidden;
+  cursor: default;
 }
 body {
   background-color: black;
@@ -228,4 +232,64 @@ h1 {
   z-index: 5;
   position: relative;
 }
+
+@media only screen and (max-width: 450px) and (min-width: 350px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  h1  {
+  font-size: 2.6rem;
+  margin-left: 2.5rem;
+  margin-top: 4rem;
+  opacity: 95%;
+  }
+  h3  {
+  font-size: 2.2rem;
+  margin-left: 3rem;
+  opacity:50%;
+  filter: blur(0.14rem);
+  }
+  h4  {
+  font-size: 1.1rem;
+  margin-left: 4rem;
+  opacity:95%;
+  margin-top: -3.2rem;
+  margin-right: 2rem;
+  line-height: 1.2rem
+  }
+  h2  {
+  font-size: 2.2rem;
+  margin-right: 3rem;
+  opacity:50%;
+  margin-top: -42rem;
+  filter: blur(0.14rem);
+  }
+  h5  {
+  font-size: 1.1rem;
+  margin-right: 4rem;
+  opacity:95%;
+  margin-top: -3.2rem;
+  margin-left: 2rem;
+  line-height: 1.2rem
+  }
+  .agile__dots {
+  flex-direction: column;
+  align-content: flex-end;
+  transform: scale(1.2);
+  margin-top: -9.5rem;
+  margin-right: -3rem;
+  }
+
+  
+
+ 
+  br {
+    display: none;
+  }
+  
+
+}
+
+
+
 </style>
