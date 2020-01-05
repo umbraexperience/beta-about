@@ -10,49 +10,49 @@
       <div class="slide">
         <h3>Who we are</h3>
         <h4>
-          The company, Umbra, Carrer Sant Antoni 1 Edifici <br />Kropotkin, 1ª
-          Planta Factoria Cultural Coma Cros, 17190 Salt, <br />
-          Girona proposed as executive producer in association with <br />
-          ARTE France. <br />
-          <br />The present document is intended to define the general <br />
-          terms and conditions applicable to the Site and for <br />
-          participating Internet users.
+          <p> The company, Umbra, Carrer Sant Antoni 1 Edifici <br/>Kropotkin, 1ª
+          Planta Factoria Cultural Coma Cros, 17190 Salt, <br/>
+          Girona proposed as executive producer in association with <br/>
+          ARTE France. </p>
+          <p>The present document is intended to define the general <br/>
+          terms and conditions applicable to the Site and for <br/>
+          participating Internet users.</p>
         </h4>
       </div>
       <div class="slide">
         <h2>How it works</h2>
         <h5>
-          The company, Umbra, Carrer Sant Antoni 1 Edifici <br />Kropotkin, 1ª
-          Planta Factoria Cultural Coma Cros, 17190 Salt, <br />
-          Girona proposed as executive producer in association with <br />
-          ARTE France. <br />
-          <br />The present document is intended to define the general <br />
-          terms and conditions applicable to the Site and for <br />
-          participating Internet users.
+          <p> The company, Umbra, Carrer Sant Antoni 1 Edifici <br/>Kropotkin, 1ª
+          Planta Factoria Cultural Coma Cros, 17190 Salt, <br/>
+          Girona proposed as executive producer in association with <br/>
+          ARTE France. </p>
+          <p>The present document is intended to define the general <br/>
+          terms and conditions applicable to the Site and for <br/>
+          participating Internet users.</p>
         </h5>
       </div>
       <div class="slide">
         <h3>The project</h3>
         <h4>
-          The company, Umbra, Carrer Sant Antoni 1 Edifici <br />Kropotkin, 1ª
-          Planta Factoria Cultural Coma Cros, 17190 Salt, <br />
-          Girona proposed as executive producer in association with <br />
-          ARTE France. <br />
-          <br />The present document is intended to define the general <br />
-          terms and conditions applicable to the Site and for <br />
-          participating Internet users.
+          <p> The company, Umbra, Carrer Sant Antoni 1 Edifici <br/>Kropotkin, 1ª
+          Planta Factoria Cultural Coma Cros, 17190 Salt, <br/>
+          Girona proposed as executive producer in association with <br/>
+          ARTE France. </p>
+          <p>The present document is intended to define the general <br/>
+          terms and conditions applicable to the Site and for <br/>
+          participating Internet users.</p>
         </h4>
       </div>
       <div class="slide">
         <h2>Background</h2>
         <h5>
-          The company, Umbra, Carrer Sant Antoni 1 Edifici <br />Kropotkin, 1ª
-          Planta Factoria Cultural Coma Cros, 17190 Salt, <br />
-          Girona proposed as executive producer in association with <br />
-          ARTE France. <br />
-          <br />The present document is intended to define the general <br />
-          terms and conditions applicable to the Site and for <br />
-          participating Internet users.
+          <p> The company, Umbra, Carrer Sant Antoni 1 Edifici <br/>Kropotkin, 1ª
+          Planta Factoria Cultural Coma Cros, 17190 Salt, <br/>
+          Girona proposed as executive producer in association with <br/>
+          ARTE France. </p>
+          <p>The present document is intended to define the general <br/>
+          terms and conditions applicable to the Site and for <br/>
+          participating Internet users.</p>
         </h5>
       </div>
     </agile>
@@ -129,6 +129,8 @@ h3 {
   margin-left: 20rem;
   margin-right: 0;
   margin-top: 2rem;
+  padding: 0rem;
+
 }
 
 h2 {
@@ -139,7 +141,8 @@ h2 {
   text-align: right;
   margin-right: 20rem;
   margin-left: 0;
-  margin-top: 2rem !important;
+  margin-top: 2rem;
+  padding: 0rem;
 }
 
 h4 {
@@ -233,36 +236,43 @@ h1 {
   position: relative;
 }
 
-@media only screen and (max-width: 450px) and (min-width: 350px) {
+@media only screen and (max-width: 414px) and (min-width: 376px) {
   body, html {
     overflow-x: hidden;
   }
   h1  {
-  font-size: 2.6rem;
-  margin-left: 2.5rem;
-  margin-top: 4rem;
+  font-size: 2.2rem;
+  margin-top: 6rem;
+  margin-left: 3rem;
   opacity: 95%;
   }
-  h3  {
-  font-size: 2.2rem;
-  margin-left: 3rem;
-  opacity:50%;
-  filter: blur(0.14rem);
-  }
+
   h4  {
   font-size: 1.1rem;
   margin-left: 4rem;
   opacity:95%;
   margin-top: -3.2rem;
   margin-right: 2rem;
-  line-height: 1.2rem
+  line-height: 1.2rem;
+  width: 19rem;
   }
+  h3  {
+  font-size: 2.2rem;
+  margin-left: 3rem;
+  opacity:50%;
+  filter: blur(0.14rem);
+  width: 19rem;
+  margin-top: 0rem;
+  }
+
   h2  {
   font-size: 2.2rem;
-  margin-right: 3rem;
+  margin-left: 3.7rem;
   opacity:50%;
-  margin-top: -42rem;
+  margin-top: 0rem;
   filter: blur(0.14rem);
+  width: 19rem;
+  padding-bottom: 0.3rem;
   }
   h5  {
   font-size: 1.1rem;
@@ -273,23 +283,360 @@ h1 {
   line-height: 1.2rem
   }
   .agile__dots {
-  flex-direction: column;
-  align-content: flex-end;
+  flex-direction: row;
+  align-content: space-between;
   transform: scale(1.2);
-  margin-top: -9.5rem;
-  margin-right: -3rem;
+  margin-top: 5rem;
   }
 
-  
+  li {
+  margin-right:1rem;
+  margin-left:1rem;
+  padding: 0rem;
+  justify-content: center;
+  }
 
- 
-  br {
-    display: none;
+  .agile__actions {
+  justify-content:center!important;
+  margin:0rem;
+  padding: 0rem;
+}
+
+.navbar {
+  display:none;
+}
+
+br {
+  display: none;
   }
   
+.agile {
+  margin-top:5rem;
+}
 
 }
 
+
+@media only screen and (max-width: 375px) and (min-width: 361px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  h1  {
+  font-size: 2.2rem;
+  margin-top: 6rem;
+  margin-left: 3rem;
+  opacity: 95%;
+  }
+
+  h4  {
+  font-size: 1.1rem;
+  margin-left: 4rem;
+  opacity:95%;
+  margin-top: -3.2rem;
+  margin-right: 2rem;
+  line-height: 1.2rem;
+  width: 19rem;
+  }
+  h3  {
+  font-size: 2.2rem;
+  margin-left: 3rem;
+  opacity:50%;
+  filter: blur(0.14rem);
+  width: 19rem;
+  margin-top: 0rem;
+  }
+
+  h2  {
+  font-size: 2.2rem;
+  margin-left: 1.5rem;
+  opacity:50%;
+  margin-top: 0rem;
+  filter: blur(0.14rem);
+  width: 19rem;
+  padding-bottom: 0.3rem;
+  }
+  h5  {
+  font-size: 1.1rem;
+  margin-right: 4rem;
+  opacity:95%;
+  margin-top: -3.2rem;
+  margin-left: 2rem;
+  line-height: 1.2rem
+  }
+  .agile__dots {
+  flex-direction: row;
+  align-content: space-between;
+  transform: scale(1.2);
+  margin-top: 3.5rem;
+  }
+
+  li {
+  margin-right:1rem;
+  margin-left:1rem;
+  padding: 0rem;
+  justify-content: center;
+  }
+
+  .agile__actions {
+  justify-content:center!important;
+  margin:0rem;
+  padding: 0rem;
+}
+
+.navbar {
+  display:none;
+}
+
+br {
+  display: none;
+  }
+  
+.agile {
+  margin-top:5rem;
+}
+}
+
+
+
+@media only screen and (max-width: 360px) and (min-width: 322px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  h1  {
+  font-size: 2.2rem;
+  margin-top: 4.5rem;
+  margin-left: 3rem;
+  opacity: 95%;
+  }
+  h3  {
+  font-size: 2.2rem;
+  margin-left: 3rem;
+  opacity:50%;
+  filter: blur(0.14rem);
+  width: 16rem;
+  }
+
+  h4  {
+  font-size: 1.1rem;
+  margin-left: 4rem;
+  opacity:95%;
+  margin-top: -3.2rem;
+  margin-right: 2rem;
+  line-height: 1.2rem;
+  width: 16rem;
+  }
+
+  h2  {
+  font-size: 2.2rem;
+  margin-left: 3rem;
+  opacity:50%;
+  filter: blur(0.14rem);
+  width: 16rem;
+  padding-bottom: -0.9rem;
+  }
+  h5  {
+  font-size: 1.1rem;
+  margin-right: 4rem;
+  opacity:95%;
+  margin-top: -3rem;
+  margin-left: 2.1rem;
+  line-height: 1.2rem;
+  width: 16rem;
+  }
+  .agile__dots {
+  flex-direction: row;
+  align-content: space-between;
+  transform: scale(1.2);
+  margin-top: 3.5rem;
+  }
+
+  li {
+  margin-right:1rem;
+  margin-left:1rem;
+  padding: 0rem;
+  justify-content: center;
+  }
+
+  .agile__actions {
+  justify-content:center!important;
+  margin:0rem;
+  padding: 0rem;
+}
+
+.navbar {
+  display:none;
+}
+
+br {
+  display: none;
+  }
+  
+.agile {
+  margin-top:2.5rem;
+}
+
+}
+
+@media only screen and (max-width: 321px) and (min-width: 300px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  h1  {
+  font-size: 2.2rem;
+  margin-top: 3.5rem;
+  margin-left: 2rem;
+  opacity: 95%;
+  }
+  h3  {
+  font-size: 2.2rem;
+  margin-left: 2rem;
+  opacity:50%;
+  filter: blur(0.14rem);
+  width: 13rem;
+  }
+
+  h4  {
+  font-size: 1rem;
+  margin-left: 3rem;
+  opacity:95%;
+  margin-top: -3.2rem;
+  margin-right: 2rem;
+  line-height: 1.2rem;
+  width: 14rem;
+  }
+
+  h2  {
+  font-size: 2.2rem;
+  margin-left: 3.4rem;
+  opacity:50%;
+  filter: blur(0.14rem);
+  width: 14rem;
+  padding-bottom: -0.9rem;
+  }
+  h5  {
+  font-size: 1rem;
+  margin-right: 3rem;
+  opacity:95%;
+  margin-top: -3rem;
+  margin-left: 2.9rem;
+  line-height: 1.2rem;
+  width: 14rem;
+  }
+  .agile__dots {
+  flex-direction: row;
+  align-content: space-between;
+  transform: scale(1.2);
+  margin-top: 2.5rem;
+  }
+
+  li {
+  margin-right:1rem;
+  margin-left:1rem;
+  padding: 0rem;
+  justify-content: center;
+  }
+
+  .agile__actions {
+  justify-content:center!important;
+  margin:0rem;
+  padding: 0rem;
+}
+
+.navbar {
+  display:none;
+}
+
+br {
+  display: none;
+  }
+  
+.agile {
+  margin-top:-1rem;
+}
+
+}
+
+
+@media only screen and (max-height: 830px) and (min-height: 810px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  h1  {
+  font-size: 2.4rem;
+  margin-top: 6rem;
+  margin-left: 3rem;
+  opacity: 95%;
+  }
+
+  h4  {
+  font-size: 1.1rem;
+  margin-left: 4rem;
+  opacity:95%;
+  margin-top: -3.2rem;
+  margin-right: 2rem;
+  line-height: 1.2rem;
+  width: 18rem;
+  }
+  h3  {
+  font-size: 2.2rem;
+  margin-left: 3rem;
+  opacity:50%;
+  filter: blur(0.14rem);
+  width: 20rem;
+  margin-top: 0rem;
+  }
+
+  h2  {
+  font-size: 2.2rem;
+  margin-left: 3.7rem;
+  opacity:50%;
+  margin-top: 0rem;
+  filter: blur(0.14rem);
+  width: 19rem;
+  padding-bottom: 0.3rem;
+  }
+  h5  {
+  font-size: 1.1rem;
+  margin-right: 4rem;
+  opacity:95%;
+  margin-top: -3.2rem;
+  margin-left: 3rem;
+  line-height: 1.2rem;
+  width: 19rem;
+  }
+  .agile__dots {
+  flex-direction: row;
+  align-content: space-between;
+  transform: scale(1.2);
+  margin-top: 8rem;
+  }
+
+  li {
+  margin-right:1rem;
+  margin-left:1rem;
+  padding: 0rem;
+  justify-content: center;
+  }
+
+  .agile__actions {
+  justify-content:center!important;
+  margin:0rem;
+  padding: 0rem;
+}
+
+.navbar {
+  display:none;
+}
+
+br {
+  display: none;
+  }
+  
+.agile {
+  margin-top:9rem;
+}
+
+}
 
 
 </style>
