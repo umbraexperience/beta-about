@@ -5,64 +5,82 @@
       <div class="carousel-cell">
         <div class="subtitol">Who we are</div>
         <div class="text">
-          <p> The company, Umbra, Carrer Sant Antoni 1 Edifici <br/>Kropotkin, 1ª
-          Planta Factoria Cultural Coma Cros, 17190 Salt, <br/>
-          Girona proposed as executive producer in association with <br/>
-          ARTE France. </p>
-          <p>The present document is intended to define the general <br/>
-          terms and conditions applicable to the Site and for <br/>
-          participating Internet users.</p>
-        </div>
-      </div>
-      
-       <div class="carousel-cell">
-        <div class="subtitol">Who we are</div>
-        <div class="text">
-          <p> The company, Umbra, Carrer Sant Antoni 1 Edifici <br/>Kropotkin, 1ª
-          Planta Factoria Cultural Coma Cros, 17190 Salt, <br/>
-          Girona proposed as executive producer in association with <br/>
-          ARTE France. </p>
-          <p>The present document is intended to define the general <br/>
-          terms and conditions applicable to the Site and for <br/>
-          participating Internet users.</p>
+          <p>
+            The company, Umbra, Carrer Sant Antoni 1 Edifici <br />Kropotkin, 1ª
+            Planta Factoria Cultural Coma Cros, 17190 Salt, <br />
+            Girona proposed as executive producer in association with <br />
+            ARTE France.
+          </p>
+          <p>
+            The present document is intended to define the general <br />
+            terms and conditions applicable to the Site and for <br />
+            participating Internet users.
+          </p>
         </div>
       </div>
 
-       <div class="carousel-cell">
+      <div class="carousel-cell">
         <div class="subtitol">Who we are</div>
         <div class="text">
-          <p> The company, Umbra, Carrer Sant Antoni 1 Edifici <br/>Kropotkin, 1ª
-          Planta Factoria Cultural Coma Cros, 17190 Salt, <br/>
-          Girona proposed as executive producer in association with <br/>
-          ARTE France. </p>
-          <p>The present document is intended to define the general <br/>
-          terms and conditions applicable to the Site and for <br/>
-          participating Internet users.</p>
+          <p>
+            The company, Umbra, Carrer Sant Antoni 1 Edifici <br />Kropotkin, 1ª
+            Planta Factoria Cultural Coma Cros, 17190 Salt, <br />
+            Girona proposed as executive producer in association with <br />
+            ARTE France.
+          </p>
+          <p>
+            The present document is intended to define the general <br />
+            terms and conditions applicable to the Site and for <br />
+            participating Internet users.
+          </p>
         </div>
       </div>
 
-       <div class="carousel-cell">
+      <div class="carousel-cell">
         <div class="subtitol">Who we are</div>
         <div class="text">
-          <p> The company, Umbra, Carrer Sant Antoni 1 Edifici <br/>Kropotkin, 1ª
-          Planta Factoria Cultural Coma Cros, 17190 Salt, <br/>
-          Girona proposed as executive producer in association with <br/>
-          ARTE France. </p>
-          <p>The present document is intended to define the general <br/>
-          terms and conditions applicable to the Site and for <br/>
-          participating Internet users.</p>
+          <p>
+            The company, Umbra, Carrer Sant Antoni 1 Edifici <br />Kropotkin, 1ª
+            Planta Factoria Cultural Coma Cros, 17190 Salt, <br />
+            Girona proposed as executive producer in association with <br />
+            ARTE France.
+          </p>
+          <p>
+            The present document is intended to define the general <br />
+            terms and conditions applicable to the Site and for <br />
+            participating Internet users.
+          </p>
+        </div>
+      </div>
+
+      <div class="carousel-cell">
+        <div class="subtitol">Who we are</div>
+        <div class="text">
+          <p>
+            The company, Umbra, Carrer Sant Antoni 1 Edifici <br />Kropotkin, 1ª
+            Planta Factoria Cultural Coma Cros, 17190 Salt, <br />
+            Girona proposed as executive producer in association with <br />
+            ARTE France.
+          </p>
+          <p>
+            The present document is intended to define the general <br />
+            terms and conditions applicable to the Site and for <br />
+            participating Internet users.
+          </p>
         </div>
       </div>
     </flickity>
-
   </div>
-
 </template>
 
 <script>
+import Flickity from "vue-flickity";
+
 export default {
   name: "app",
-  components: {}
+  components: {
+    Flickity
+  }
 };
 </script>
 
@@ -92,5 +110,4 @@ body * {
   height: 160px; /* height of carousel */
   margin-right: 10px;
 }
-
 </style>
