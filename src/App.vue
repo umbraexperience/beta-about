@@ -2,74 +2,74 @@
   <div id="app">
     <div class="title">About the project</div>
     <flickity ref="flickity">
-      <div class="carousel-cell" >
-        <div class="subtitol">Who we are</div>
-        <div class="text">
-          <p>
-            The company, Umbra, Carrer Sant Antoni 1 Edifici Kropotkin, 1ª
-            Planta Factoria Cultural Coma Cros, 17190 Salt, 
-            Girona proposed as executive producer in association with 
-            ARTE France.
-          </p>
-          <p>
-            The present document is intended to define the general 
-            terms and conditions applicable to the Site and for 
-            participating Internet users.
-          </p>
-        </div> 
-      </div>
-
-      <div class="carousel-cell">
-      
-        <div class="subtitol2">The project</div>
-        <div class="text2">
-          <p>
-            The company, Umbra, Carrer Sant Antoni 1 Edifici Kropotkin, 1ª
-            Planta Factoria Cultural Coma Cros, 17190 Salt, 
-            Girona proposed as executive producer in association with 
-            ARTE France.
-          </p>
-          <p>
-            The present document is intended to define the general 
-            terms and conditions applicable to the Site and for 
-            participating Internet users.
-          </p>
+        <div class="carousel-cell">
+          <div class="subtitol">Who we are</div>
+          <div class="text">
+            <p>
+              The company, Umbra, Carrer Sant Antoni 1 Edifici Kropotkin, 1ª
+              Planta Factoria Cultural Coma Cros, 17190 Salt, 
+              Girona proposed as executive producer in association with 
+              ARTE France.
+            </p>
+            <p>
+              The present document is intended to define the general 
+              terms and conditions applicable to the Site and for 
+              participating Internet users.
+            </p>
+          </div> 
         </div>
-      </div>
 
-      <div class="carousel-cell">
-        <div class="subtitol">The narrative</div>
-        <div class="text">
-          <p>
-            The company, Umbra, Carrer Sant Antoni 1 Edifici Kropotkin, 1ª
-            Planta Factoria Cultural Coma Cros, 17190 Salt, 
-            Girona proposed as executive producer in association with 
-            ARTE France.
-          </p>
-          <p>
-            The present document is intended to define the general 
-            terms and conditions applicable to the Site and for 
-            participating Internet users.
-          </p>
+        <div class="carousel-cell" id="hola">
+        
+          <div class="subtitol2">The project</div>
+          <div class="text2">
+            <p>
+              The company, Umbra, Carrer Sant Antoni 1 Edifici Kropotkin, 1ª
+              Planta Factoria Cultural Coma Cros, 17190 Salt, 
+              Girona proposed as executive producer in association with 
+              ARTE France.
+            </p>
+            <p>
+              The present document is intended to define the general 
+              terms and conditions applicable to the Site and for 
+              participating Internet users.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="carousel-cell">
-        <div class="subtitol2">Data collect</div>
-        <div class="text2">
-          <p>
-            The company, Umbra, Carrer Sant Antoni 1 Edifici Kropotkin, 1ª
-            Planta Factoria Cultural Coma Cros, 17190 Salt, 
-            Girona proposed as executive producer in association with 
-            ARTE France.
-          </p>
-          <p>
-            The present document is intended to define the general 
-            terms and conditions applicable to the Site and for 
-            participating Internet users.
-          </p>
-        </div> 
-      </div>
+        <div class="carousel-cell">
+          <div class="subtitol">The narrative</div>
+          <div class="text">
+            <p>
+              The company, Umbra, Carrer Sant Antoni 1 Edifici Kropotkin, 1ª
+              Planta Factoria Cultural Coma Cros, 17190 Salt, 
+              Girona proposed as executive producer in association with 
+              ARTE France.
+            </p>
+            <p>
+              The present document is intended to define the general 
+              terms and conditions applicable to the Site and for 
+              participating Internet users.
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-cell" id="hola">
+          <div class="subtitol2">Data collect</div>
+          <div class="text2">
+            <p>
+              The company, Umbra, Carrer Sant Antoni 1 Edifici Kropotkin, 1ª
+              Planta Factoria Cultural Coma Cros, 17190 Salt, 
+              Girona proposed as executive producer in association with 
+              ARTE France.
+            </p>
+            <p>
+              The present document is intended to define the general 
+              terms and conditions applicable to the Site and for 
+              participating Internet users.
+            </p>
+          </div> 
+        </div>
     </flickity>
   </div>
 </template>
@@ -90,6 +90,8 @@ html,
 body {
   max-width: 100%;
   overflow-y: hidden;
+  height:99%;
+
 }
 body {
   background-color: #0f0f10;
@@ -98,7 +100,9 @@ body * {
   color: #b4b4b4;
 }
 * {
-  
+ /* border-style: solid;
+ border-color:chartreuse;
+ border-width: 1px; */ 
 }
 
 #app {
@@ -110,29 +114,27 @@ body * {
   margin: 0 auto;
 }
 
-
 .carousel-cell {
-  width: 100%; 
-  height: 22rem; 
-  margin-top: 2rem;
+  width: 0 auto; 
+  height: 20rem; 
+  margin-top: 2rem; 
+  margin-left: 20rem;
   
-  
- 
 }
 
 .flickity-button {
   display: none;
-  
 }
 
 .flickity-page-dots {
-  bottom: 8rem;
-  filter: blur(0.07rem);
+  bottom: 7rem;
   transform: rotate(90deg);
+  filter: blur(0.07rem);
   margin-left: 70rem;
   width: 8rem;
   height: auto;
-
+  align-items: center;
+  
 }
 
 .flickity-page-dots .dot {
@@ -141,15 +143,13 @@ body * {
   opacity: 1;
   background: transparent;
   border: 2px solid white;
-  filter: blur(0.07rem);
+  filter: blur(0.07rem); 
   
 }
 
 .flickity-page-dots .dot.is-selected {
   background: white;
   filter: blur(0.07rem);
-  
-
 }
 
 
@@ -172,7 +172,6 @@ body * {
   opacity: 25%;
   filter: blur(0.17rem);
   text-align: left;
-  margin-left: 20rem;
   margin-right: 0;
   margin-top: 5rem;
   padding: 0rem;
@@ -181,7 +180,7 @@ body * {
 }
 .text {
   text-align: left;
-  margin-left: 26rem;
+  margin-left: 6rem;
   margin-right: 0;
   margin-top: -3.2rem;
   font-size: 1.15rem;
@@ -196,15 +195,15 @@ body * {
   opacity: 25%;
   filter: blur(0.17rem);
   text-align: right;
-  margin-left: 31rem;
+  margin-left: 10rem;
   margin-right: 0;
   margin-top: 5rem;
   padding: 0rem;
   width: 29rem;
 }
 .text2 {
-  margin-left: 26rem;
   margin-right: 0;
+  margin-left: 6rem;
   margin-top: -3.2rem;
   font-size: 1.15rem;
   height:12rem; 
@@ -212,4 +211,21 @@ body * {
   width: 30rem;
   text-align: right;
 }
+
+
+/* @media (max-width: 1024px) {
+  
+  .flickity-page-dots {
+  top: 22rem;
+  filter: blur(0.07rem);
+  transform: rotate(0deg);
+  margin: 0 auto;
+  width: 8rem;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+} */ 
+
+
 </style>
