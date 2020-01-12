@@ -32,15 +32,20 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  name: 'Page1',
+  data (){
+    return {
+      msg:"welcome to youy Vue.js App"
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1, h2 {
+        font-weight: normal;
+    }
 h3 {
   margin: 40px 0 0;
 }

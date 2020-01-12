@@ -1,4 +1,4 @@
-# post-video2
+# post-video
 
 ## Project setup
 ```
