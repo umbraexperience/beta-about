@@ -1,77 +1,66 @@
 <template>
   <div id="app">
     <div class="title">About the project</div>
-    <flickity ref="flickity" :options="flickityOptions">
-        <div class="carousel-cell">
-          <div class="subtitol">Who we are</div>
-          <div class="text">
-            <p>
-              The company, Umbra, Carrer Sant Antoni 1 Edifici Kropotkin, 1ª
-              Planta Factoria Cultural Coma Cros, 17190 Salt, 
-              Girona proposed as executive producer in association with 
-              ARTE France.
-            </p>
-            <p>
-              The present document is intended to define the general 
-              terms and conditions applicable to the Site and for 
-              participating Internet users.
-            </p>
-          </div> 
+    <flickity class="flickity" ref="flickity" :options="flickityOptions">
+      <div class="carousel-cell">
+        <div class="contingut">
+        <div class="apartat">Quienes somos</div>
+        <div class="descripcio">
+          <p>
+            Umbra es un proyecto de final de grado formado por siete estudiantes
+            de la Universidad de Girona (ERAM) con perfiles distintos, que van 
+            des de el ámbito audiovisual (vídeo, sonido, ...), hasta  el
+            multimedia  (programación, 3D,...).
+          </p>
         </div>
-
-        <div class="carousel-cell" id="hola">
-        
-          <div class="subtitol2">The project</div>
-          <div class="text2">
-            <p>
-              The company, Umbra, Carrer Sant Antoni 1 Edifici Kropotkin, 1ª
-              Planta Factoria Cultural Coma Cros, 17190 Salt, 
-              Girona proposed as executive producer in association with 
-              ARTE France.
-            </p>
-            <p>
-              The present document is intended to define the general 
-              terms and conditions applicable to the Site and for 
-              participating Internet users.
-            </p>
-            
-          </div>
         </div>
-
-        <div class="carousel-cell">
-          <div class="subtitol">The narrative</div>
-          <div class="text">
-            <p>
-              The company, Umbra, Carrer Sant Antoni 1 Edifici Kropotkin, 1ª
-              Planta Factoria Cultural Coma Cros, 17190 Salt, 
-              Girona proposed as executive producer in association with 
-              ARTE France.
-            </p>
-            <p>
-              The present document is intended to define the general 
-              terms and conditions applicable to the Site and for 
-              participating Internet users.
-            </p>
-            
-          </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="contingut">
+        <div class="apartat">El proyecto</div>
+        <div class="descripcio">
+          <p>
+            Umbra es un proyecto transmedia formado por una narración online
+            interactiva, una instalación a modo de presentación y un spot
+            promocional.
+          </p>
         </div>
-
-        <div class="carousel-cell" id="hola">
-          <div class="subtitol2">Data collect</div>
-          <div class="text2">
-            <p>
-              The company, Umbra, Carrer Sant Antoni 1 Edifici Kropotkin, 1ª
-              Planta Factoria Cultural Coma Cros, 17190 Salt, 
-              Girona proposed as executive producer in association with 
-              ARTE France.
-            </p>
-            <p>
-              The present document is intended to define the general 
-              terms and conditions applicable to the Site and for 
-              participating Internet users.
-            </p>
-          </div> 
         </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="contingut">
+        <div class="apartat">La narrativa</div>
+        <div class="descripcio">
+          <p>
+            La narración online trata la temática de los datos de una forma
+            abstracta y sutil, para ser más concretos, habla sobre el control de
+            los datos en un futuro cercano y su importancia. El objetivo final
+            del proyecto, consiste en crear una reflexión al espectador  y
+            conscienciarlo, sobre la trascendencia de los datos, al mismo tiempo
+            que se entretiene con la narración creada.
+          </p>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="contingut">
+        <div class="apartat">Los datos</div>
+        <div class="descripcio">
+          <p>
+            Para calcular el valor de los tus datos, hemos tenido en cuenta
+            distintos factores, el primero de ellos es la edad, juntamente con
+            las decisiones que se tomaban durante la narración. El otro elemento 
+            ha sido un conjunto de estudios científicos, donde su objetivo era
+            hacer una estimación de cual seria el valor que tendrían los datos
+            dentro de unos años. En función de la investigación, los datos
+            cambiaban entre ellos, debido a que a día de hoy, es bastante
+            complicado predecir como evolucionará este mundo. Aun así, los
+            estudios utilizados para llevar a término los calculas de Umbra han
+            sido ESTUDIO 1 y ESTUDIO 2.
+          </p>
+        </div>
+        </div>
+      </div>
     </flickity>
   </div>
 </template>
@@ -87,13 +76,14 @@ export default {
   data() {
     return {
       flickityOptions: {
-        autoPlay:true,
-        wrapAround: true
-        
+        autoPlay: true,
+        wrapAround: true,
+        prevNextButtons: false
+
         // any options from Flickity can be used
       }
-    }
-  },
+    };
+  }
 };
 </script>
 
@@ -102,8 +92,7 @@ html,
 body {
   max-width: 100%;
   overflow-y: hidden;
-  height:99%;
-
+  height: 99%;
 }
 body {
   background-color: #0f0f10;
@@ -112,9 +101,9 @@ body * {
   color: #b4b4b4;
 }
 * {
- /* border-style: solid;
- border-color:chartreuse;
- border-width: 1px; */ 
+  /* border-style: solid;
+  border-color: chartreuse;
+  border-width: 1px; */ 
 }
 
 #app {
@@ -126,45 +115,6 @@ body * {
   margin: 0 auto;
 }
 
-.carousel-cell {
-  width: 0 auto; 
-  height: 20rem; 
-  margin-top: 2rem; 
-  margin-left: 20rem;
-  
-}
-
-.flickity-button {
-  display: none;
-}
-
-.flickity-page-dots {
-  bottom: 7rem;
-  transform: rotate(90deg);
-  filter: blur(0.07rem);
-  margin-left: 70rem;
-  width: 8rem;
-  height: auto;
-  align-items: center;
-  
-}
-
-.flickity-page-dots .dot {
-  width: 10px;
-  height: 10px;
-  opacity: 1;
-  background: transparent;
-  border: 2px solid white;
-  filter: blur(0.07rem); 
-  
-}
-
-.flickity-page-dots .dot.is-selected {
-  background: white;
-  filter: blur(0.07rem);
-}
-
-
 .title {
   font-family: "Tiempos Headline Regular", Times, serif;
   font-size: 3.15rem;
@@ -175,68 +125,56 @@ body * {
   color: #f5f9fb;
   filter: blur(0.07rem);
   width: 30rem;
+}
+
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 460px; /* height of carousel */
+  margin-right: 10px;
+  
 
 }
 
-.subtitol {
+.flickity-page-dots {
+  bottom: 0rem;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 11px;
+  height: 11px;
+  opacity: 1;
+  background: transparent;
+  border: 1px solid white;
+  filter: blur(0.07rem); 
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+.contingut {
+  margin-top: 5rem;
+  margin-left:20rem;
+  height: 20rem;
+  width: 35rem;
+}
+
+.apartat {
   font-size: 4.7rem;
   font-weight: 500;
-  opacity: 25%;
+  opacity: 40%;
   filter: blur(0.17rem);
   text-align: left;
-  margin-right: 0;
-  margin-top: 5rem;
-  padding: 0rem;
-  width: 29rem;
-  
-}
-.text {
-  text-align: left;
-  margin-left: 6rem;
-  margin-right: 0;
-  margin-top: -3.2rem;
-  font-size: 1.15rem;
-  filter: blur(0.07rem);
-  width: 30rem;
 }
 
-.subtitol2 {
-  font-size: 4.7rem;
-  font-weight: 500;
-  opacity: 25%;
-  filter: blur(0.17rem);
-  text-align: right;
-  margin-left: 10rem;
-  margin-right: 0;
-  margin-top: 5rem;
-  padding: 0rem;
-  width: 29rem;
-}
-.text2 {
-  margin-right: 0;
+.descripcio {
+  text-align: left;
   margin-left: 6rem;
   margin-top: -3.2rem;
   font-size: 1.15rem;
-  height:12rem; 
-  filter: blur(0.07rem);
-  width: 30rem;
-  text-align: right;
-}
-
-
-/* @media (max-width: 1024px) {
+  filter: blur(0.04rem);
+ 
   
-  .flickity-page-dots {
-  top: 22rem;
-  filter: blur(0.07rem);
-  transform: rotate(0deg);
-  margin: 0 auto;
-  width: 8rem;
-  height: auto;
-  align-items: center;
-  justify-content: center;
 }
-} */ 
-
 
 </style>
