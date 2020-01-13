@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="title">About the project</div>
-    <flickity ref="flickity">
+    <flickity ref="flickity" :options="flickityOptions">
         <div class="carousel-cell">
           <div class="subtitol">Who we are</div>
           <div class="text">
@@ -34,6 +34,7 @@
               terms and conditions applicable to the Site and for 
               participating Internet users.
             </p>
+            
           </div>
         </div>
 
@@ -51,6 +52,7 @@
               terms and conditions applicable to the Site and for 
               participating Internet users.
             </p>
+            
           </div>
         </div>
 
@@ -81,7 +83,17 @@ export default {
   name: "app",
   components: {
     Flickity
-  }
+  },
+  data() {
+    return {
+      flickityOptions: {
+        autoPlay:true,
+        wrapAround: true
+        
+        // any options from Flickity can be used
+      }
+    }
+  },
 };
 </script>
 
@@ -184,7 +196,6 @@ body * {
   margin-right: 0;
   margin-top: -3.2rem;
   font-size: 1.15rem;
-  height:12rem; 
   filter: blur(0.07rem);
   width: 30rem;
 }
