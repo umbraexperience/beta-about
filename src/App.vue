@@ -17,8 +17,8 @@
       </div>
       <div class="carousel-cell">
         <div class="contingut">
-        <div class="apartat">El proyecto</div>
-        <div class="descripcio">
+        <div class="apartat2">El proyecto</div>
+        <div class="descripcio2">
           <p>
             Umbra es un proyecto transmedia formado por una narración online
             interactiva, una instalación a modo de presentación y un spot
@@ -44,8 +44,8 @@
       </div>
       <div class="carousel-cell">
         <div class="contingut">
-        <div class="apartat">Los datos</div>
-        <div class="descripcio">
+        <div class="apartat2">Los datos</div>
+        <div class="descripcio2">
           <p>
             Para calcular el valor de los tus datos, hemos tenido en cuenta
             distintos factores, el primero de ellos es la edad, juntamente con
@@ -101,18 +101,19 @@ body * {
   color: #b4b4b4;
 }
 * {
-  /* border-style: solid;
+   border-style: solid;
   border-color: chartreuse;
-  border-width: 1px; */ 
+  border-width: 1px; 
 }
 
 #app {
   font-family: serif;
-  text-align: center;
   align-items: center;
   height: 100%;
   font-family: "Tiempos Headline Light", Times, serif;
   margin: 0 auto;
+  
+
 }
 
 .title {
@@ -156,7 +157,8 @@ body * {
   margin-top: 5rem;
   margin-left:20rem;
   height: 20rem;
-  width: 35rem;
+  max-width: 35rem;
+
 }
 
 .apartat {
@@ -165,6 +167,8 @@ body * {
   opacity: 40%;
   filter: blur(0.17rem);
   text-align: left;
+  max-width: 30rem;
+
 }
 
 .descripcio {
@@ -173,8 +177,42 @@ body * {
   margin-top: -3.2rem;
   font-size: 1.15rem;
   filter: blur(0.04rem);
- 
+}
+
+.apartat2 {
+  font-size: 4.7rem;
+  font-weight: 500;
+  opacity: 40%;
+  filter: blur(0.17rem);
+  text-align: right;
+
+}
+
+.descripcio2 {
+  text-align: right;
+  margin-right: 4rem;
+  margin-top: -3.2rem;
+  font-size: 1.15rem;
+  filter: blur(0.04rem);
   
 }
+
+/* @media screen and (max-width: 650px) {
+  .apartat {
+    font-size: 4.5rem;
+  }
+
+  .apartat2 {
+    font-size: 2rem;
+  }
+
+  .descripcio {
+    font-size: 1rem;
+  }
+
+  .descripcio2 {
+    font-size: 1rem;
+  }
+} */
 
 </style>
