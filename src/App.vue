@@ -1,64 +1,64 @@
 <template>
   <div id="app">
-    <div class="title">About the project</div>
+    <div class="container"><h1 class="title">About the project</h1></div>
     <flickity class="flickity" ref="flickity" :options="flickityOptions">
       <div class="carousel-cell">
         <div class="contingut">
-        <div class="apartat">Quienes somos</div>
-        <div class="descripcio">
-          <p>
-            Umbra es un proyecto de final de grado formado por siete estudiantes
-            de la Universidad de Girona (ERAM) con perfiles distintos, que van 
-            des de el ámbito audiovisual (vídeo, sonido, ...), hasta  el
-            multimedia  (programación, 3D,...).
-          </p>
-        </div>
-        </div>
-      </div>
-      <div class="carousel-cell">
-        <div class="contingut">
-        <div class="apartat2">El proyecto</div>
-        <div class="descripcio2">
-          <p>
-            Umbra es un proyecto transmedia formado por una narración online
-            interactiva, una instalación a modo de presentación y un spot
-            promocional.
-          </p>
-        </div>
+          <div class="apartat">Quienes somos</div>
+          <div class="descripcio">
+            <p>
+              Umbra es un proyecto de final de grado formado por siete
+              estudiantes de la Universidad de Girona (ERAM) con perfiles
+              distintos, que van des de el ámbito audiovisual (vídeo, sonido,
+              ...), hasta el multimedia (programación, 3D,...).
+            </p>
+          </div>
         </div>
       </div>
       <div class="carousel-cell">
         <div class="contingut">
-        <div class="apartat">La narrativa</div>
-        <div class="descripcio">
-          <p>
-            La narración online trata la temática de los datos de una forma
-            abstracta y sutil, para ser más concretos, habla sobre el control de
-            los datos en un futuro cercano y su importancia. El objetivo final
-            del proyecto, consiste en crear una reflexión al espectador  y
-            conscienciarlo, sobre la trascendencia de los datos, al mismo tiempo
-            que se entretiene con la narración creada.
-          </p>
-        </div>
+          <div class="apartat2">El proyecto</div>
+          <div class="descripcio2">
+            <p>
+              Umbra es un proyecto transmedia formado por una narración online
+              interactiva, una instalación a modo de presentación y un spot
+              promocional.
+            </p>
+          </div>
         </div>
       </div>
       <div class="carousel-cell">
         <div class="contingut">
-        <div class="apartat2">Los datos</div>
-        <div class="descripcio2">
-          <p>
-            Para calcular el valor de los tus datos, hemos tenido en cuenta
-            distintos factores, el primero de ellos es la edad, juntamente con
-            las decisiones que se tomaban durante la narración. El otro elemento 
-            ha sido un conjunto de estudios científicos, donde su objetivo era
-            hacer una estimación de cual seria el valor que tendrían los datos
-            dentro de unos años. En función de la investigación, los datos
-            cambiaban entre ellos, debido a que a día de hoy, es bastante
-            complicado predecir como evolucionará este mundo. Aun así, los
-            estudios utilizados para llevar a término los calculas de Umbra han
-            sido ESTUDIO 1 y ESTUDIO 2.
-          </p>
+          <div class="apartat">La narrativa</div>
+          <div class="descripcio">
+            <p>
+              La narración online trata la temática de los datos de una forma
+              abstracta y sutil, para ser más concretos, habla sobre el control
+              de los datos en un futuro cercano y su importancia. El objetivo
+              final del proyecto, consiste en crear una reflexión al espectador
+              y conscienciarlo, sobre la trascendencia de los datos, al mismo
+              tiempo que se entretiene con la narración creada.
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="contingut">
+          <div class="apartat2">Los datos</div>
+          <div class="descripcio2">
+            <p>
+              Para calcular el valor de los tus datos, hemos tenido en cuenta
+              distintos factores, el primero de ellos es la edad, juntamente con
+              las decisiones que se tomaban durante la narración. El otro
+              elemento ha sido un conjunto de estudios científicos, donde su
+              objetivo era hacer una estimación de cual seria el valor que
+              tendrían los datos dentro de unos años. En función de la
+              investigación, los datos cambiaban entre ellos, debido a que a día
+              de hoy, es bastante complicado predecir como evolucionará este
+              mundo. Aun así, los estudios utilizados para llevar a término los
+              calculas de Umbra han sido ESTUDIO 1 y ESTUDIO 2.
+            </p>
+          </div>
         </div>
       </div>
     </flickity>
@@ -91,8 +91,9 @@ export default {
 html,
 body {
   max-width: 100%;
-  overflow-y: hidden;
-  height: 99%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 body {
   background-color: #0f0f10;
@@ -100,11 +101,11 @@ body {
 body * {
   color: #b4b4b4;
 }
-* {
-   border-style: solid;
+/* * {
+  border-style: solid;
   border-color: chartreuse;
-  border-width: 1px; 
-}
+  border-width: 1px;
+} */
 
 #app {
   font-family: serif;
@@ -112,8 +113,13 @@ body * {
   height: 100%;
   font-family: "Tiempos Headline Light", Times, serif;
   margin: 0 auto;
-  
+}
 
+.container {
+  padding: 0 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  word-wrap: break-word;
 }
 
 .title {
@@ -122,18 +128,23 @@ body * {
   font-weight: 500;
   text-align: left;
   margin-top: 5.1rem;
-  margin-left: 13.5rem;
+  /* margin-left: 13.5rem; */
   color: #f5f9fb;
   filter: blur(0.07rem);
   width: 30rem;
+  white-space: normal;
+  word-wrap: break-word;
+
+  max-width: 100%;
 }
 
 .carousel-cell {
   width: 100%; /* full width */
   height: 460px; /* height of carousel */
   margin-right: 10px;
-  
-
+}
+.flickity {
+  margin-top: 5rem;
 }
 
 .flickity-page-dots {
@@ -146,7 +157,7 @@ body * {
   opacity: 1;
   background: transparent;
   border: 1px solid white;
-  filter: blur(0.07rem); 
+  filter: blur(0.07rem);
 }
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
@@ -154,11 +165,10 @@ body * {
 }
 
 .contingut {
-  margin-top: 5rem;
-  margin-left:20rem;
+  /* margin-left:20rem; */
+  margin: 0 auto;
   height: 20rem;
   max-width: 35rem;
-
 }
 
 .apartat {
@@ -168,7 +178,6 @@ body * {
   filter: blur(0.17rem);
   text-align: left;
   max-width: 30rem;
-
 }
 
 .descripcio {
@@ -185,7 +194,6 @@ body * {
   opacity: 40%;
   filter: blur(0.17rem);
   text-align: right;
-
 }
 
 .descripcio2 {
@@ -194,7 +202,6 @@ body * {
   margin-top: -3.2rem;
   font-size: 1.15rem;
   filter: blur(0.04rem);
-  
 }
 
 /* @media screen and (max-width: 650px) {
@@ -214,5 +221,4 @@ body * {
     font-size: 1rem;
   }
 } */
-
 </style>
