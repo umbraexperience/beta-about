@@ -113,6 +113,9 @@ body * {
   height: 100%;
   font-family: "Tiempos Headline Light", Times, serif;
   margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -135,12 +138,13 @@ body * {
   white-space: normal;
   word-wrap: break-word;
 
+
   max-width: 100%;
 }
 
 .carousel-cell {
   width: 100%; /* full width */
-  height: 460px; /* height of carousel */
+  height: 380px; /* height of carousel */
   margin-right: 10px;
 }
 .flickity {
@@ -148,7 +152,9 @@ body * {
 }
 
 .flickity-page-dots {
-  bottom: 0rem;
+  bottom: 11.5rem;
+  transform: rotate(90deg);
+  margin-left: 35rem;
 }
 /* white circles */
 .flickity-page-dots .dot {
@@ -158,6 +164,7 @@ body * {
   background: transparent;
   border: 1px solid white;
   filter: blur(0.07rem);
+  
 }
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
@@ -178,6 +185,8 @@ body * {
   filter: blur(0.17rem);
   text-align: left;
   max-width: 30rem;
+  padding-left:1rem;
+  padding-right:1rem; 
 }
 
 .descripcio {
@@ -186,6 +195,8 @@ body * {
   margin-top: -3.2rem;
   font-size: 1.15rem;
   filter: blur(0.04rem);
+  padding-left:1rem;
+  padding-right:1rem; 
 }
 
 .apartat2 {
@@ -194,6 +205,8 @@ body * {
   opacity: 40%;
   filter: blur(0.17rem);
   text-align: right;
+  padding-left:1rem;
+  padding-right:1rem; 
 }
 
 .descripcio2 {
@@ -202,23 +215,69 @@ body * {
   margin-top: -3.2rem;
   font-size: 1.15rem;
   filter: blur(0.04rem);
+  padding-left:1rem;
+  padding-right:1rem; 
 }
 
-/* @media screen and (max-width: 650px) {
-  .apartat {
-    font-size: 4.5rem;
+ @media screen and (max-width: 1150px) {
+  
+.flickity-page-dots {
+  bottom: 0rem;
+  transform: rotate(0deg);
+  margin-left: 0rem;
+  } 
+
+}
+
+ @media screen and (max-width: 650px) {
+
+.title {
+  font-size: 2.2rem;
+  
+}  
+
+.apartat {
+  font-size: 1.75rem;
+  opacity: 60%;
+  filter: blur(0.1rem);
+  margin-left:2rem
+}
+
+.apartat2 {
+  font-size: 1.75rem;
+  opacity: 60%;
+  filter: blur(0.1rem);
+  margin-right:2rem;
+
+}
+
+.descripcio {
+  font-size: 1rem;
+  margin-top:-2rem;
+  padding-right:2rem;
+  
+}
+
+.descripcio2 {
+  font-size: 1rem;
+  margin-top:-2rem;
+  padding-left:2rem;
+  
   }
 
-  .apartat2 {
-    font-size: 2rem;
-  }
+.flickity-page-dots {
+  bottom: -3rem;
+  transform: rotate(0deg);
+  margin-left: 0rem;
+  } 
+.carousel-cell {
+  border: 1px solid blue;
+  height: 390px; 
 
-  .descripcio {
-    font-size: 1rem;
-  }
 
-  .descripcio2 {
-    font-size: 1rem;
-  }
-} */
+  
+}
+} 
+
+
 </style>
