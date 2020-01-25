@@ -272,7 +272,6 @@ body * {
   margin-left: 0rem;
   } 
 .carousel-cell {
-  border: 1px solid blue;
   height: 390px; 
 
 
